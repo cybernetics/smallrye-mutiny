@@ -1,11 +1,11 @@
 package io.smallrye.mutiny.operators;
 
-import io.smallrye.mutiny.Uni;
-import io.smallrye.mutiny.subscription.UniSubscription;
+import static io.smallrye.mutiny.helpers.ParameterValidation.nonNull;
 
 import java.util.function.Supplier;
 
-import static io.smallrye.mutiny.helpers.ParameterValidation.nonNull;
+import io.smallrye.mutiny.Uni;
+import io.smallrye.mutiny.subscription.UniSubscription;
 
 public class UniOnCancellationInvokeUni<I> extends UniOperator<I, I> {
 
